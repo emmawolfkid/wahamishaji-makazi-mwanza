@@ -15,11 +15,11 @@ img {
     height: auto;
     max-height: 78px;
     object-fit: contain;
-    border-radius: 12px;
-    background: #fff;
-    padding: 4px;
-    border: 1px solid rgba(255, 255, 255, 0.32);
-    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.18);
+    border-radius: 14px;
+    background: linear-gradient(135deg, #111827 0%, #1f2937 100%);
+    padding: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.24);
 }
 
 .mobile-menu-button {
@@ -422,9 +422,10 @@ img {
     height: auto;
     max-height: 96px;
     object-fit: contain;
-    border-radius: 14px;
-    background: #fff;
-    padding: 6px;
+    border-radius: 16px;
+    background: linear-gradient(135deg, #111827 0%, #1f2937 100%);
+    padding: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.16);
 }
 
 .floating-whatsapp {
