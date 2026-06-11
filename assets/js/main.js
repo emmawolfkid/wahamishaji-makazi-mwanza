@@ -1,10 +1,11 @@
 (function () {
-    var whatsappNumber = "255679779669";
+    var whatsappNumber = "255759905307";
     var mobileMenuButton = document.getElementById("mobileMenuButton");
     var mobileMenu = document.getElementById("mobileMenu");
     var form = document.getElementById("fomuYaBooking");
     var submitButton = document.getElementById("kitufeChaTuma");
     var statusText = document.getElementById("formStatus");
+    var heroSlides = document.querySelectorAll(".hero-slide");
 
     function buildWhatsAppUrl(formData) {
         var ujumbe = [
@@ -70,6 +71,16 @@
                     window.location.href = whatsappUrl;
                 });
         });
+    }
+
+    if (heroSlides.length > 1) {
+        var currentHeroSlide = 0;
+
+        window.setInterval(function () {
+            heroSlides[currentHeroSlide].classList.remove("is-active");
+            currentHeroSlide = (currentHeroSlide + 1) % heroSlides.length;
+            heroSlides[currentHeroSlide].classList.add("is-active");
+        }, 12000);
     }
 
     var revealItems = document.querySelectorAll(".reveal");

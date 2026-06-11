@@ -12,7 +12,7 @@
     <meta property="og:description" content="Hama bila stress. Tunafungasha, tunasafirisha na tunapanga mizigo yako kwa usalama.">
     <meta property="og:image" content="assets/images/optimized/team-group.webp">
     <meta property="og:type" content="website">
-    <link rel="icon" href="assets/images/optimized/logo.webp">
+    <link rel="icon" href="assets/images/logo.png">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -35,7 +35,7 @@
         "@context": "https://schema.org",
         "@type": "MovingCompany",
         "name": "Wahamishaji Makazi Mwanza",
-        "image": "assets/images/optimized/logo.webp",
+        "image": "assets/images/logo.png",
         "telephone": "+255759905307",
         "email": "info@wahamishajimakazimwanza@gmail.com",
         "address": {
@@ -52,7 +52,7 @@
     <header class="site-header bg-chapaNyeusi text-white sticky top-0 z-50 shadow-md">
         <div class="container mx-auto px-5 lg:px-6 py-3 flex justify-between items-center">
             <a href="#nyumbani" class="brand-link flex items-center gap-3" aria-label="Wahamishaji Makazi Mwanza">
-                <img src="assets/images/optimized/logo.webp" alt="Logo ya Wahamishaji Makazi Mwanza" class="brand-logo">
+                <img src="assets/images/logo.png" alt="Logo ya Wahamishaji Makazi Mwanza" class="brand-logo">
                 <span class="hidden sm:block leading-tight">
                     <span class="block font-extrabold text-white">Wahamishaji</span>
                     <span class="block text-xs text-gray-300 uppercase tracking-wide">Makazi Mwanza</span>
@@ -129,11 +129,11 @@
                     </div>
                 </div>
 
-                <div class="hero-media reveal delay-1">
-                    <img src="assets/images/optimized/team-red.webp" alt="Timu ya Wahamishaji Makazi Mwanza wakiwa kwenye sare nyekundu" class="hero-photo">
-                    <div class="hero-badge">
-                        <img src="assets/images/optimized/logo.webp" alt="" aria-hidden="true">
-                        <span>Tunahakikisha mzigo unafika salama</span>
+                <div class="hero-media reveal delay-1" aria-label="Picha za Wahamishaji Makazi Mwanza">
+                    <div class="hero-slider" data-hero-slider>
+                        <img src="assets/images/optimized/team-group.webp" alt="Tangazo rasmi la Wahamishaji Makazi Mwanza" class="hero-slide poster-slide is-active">
+                        <img src="assets/images/optimized/moving-promo-1.webp" alt="Tangazo la huduma ya kuhamisha makazi Mwanza" class="hero-slide poster-slide">
+                        <img src="assets/images/optimized/moving-promo-2.webp" alt="Poster ya huduma za Wahamishaji Makazi Mwanza" class="hero-slide poster-slide">
                     </div>
                 </div>
             </div>
@@ -164,9 +164,7 @@
                     <p class="text-gray-500 text-sm mb-6">Taarifa hizi zitatumwa WhatsApp kwenda namba rasmi ya kampuni.</p>
                     <form id="fomuYaBooking" name="maombi_ya_uhamishaji" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="space-y-4">
                         <input type="hidden" name="form-name" value="maombi_ya_uhamishaji">
-                        <p class="hidden">
-                            <label>Usijaze hii: <input name="bot-field"></label>
-                        </p>
+                        <input type="hidden" name="bot-field" value="">
                         <div>
                             <label for="jina" class="form-label">Jina Lako Kamili</label>
                             <input id="jina" type="text" name="jina" placeholder="Mfano: John Doe" class="form-field" required>
@@ -239,7 +237,7 @@
                     <article class="pricing-card reveal">
                         <h3>Kifurushi Kidogo</h3>
                         <p>Single room / mzigo mdogo</p>
-                        <div class="price">Tsh 50,000+</div>
+                        <div class="price">Tsh 150,000+</div>
                         <ul>
                             <li>Gari ndogo au pick-up</li>
                             <li>Wafanyakazi 2 wa kubeba</li>
@@ -253,7 +251,7 @@
                         <span class="popular">Inayopendwa</span>
                         <h3>Kifurushi cha Kati</h3>
                         <p>Nyumba ya vyumba 2 hadi 3</p>
-                        <div class="price">Tsh 120,000+</div>
+                        <div class="price">Tsh 250,000+</div>
                         <ul>
                             <li>Canter truck ya wastani</li>
                             <li>Wafanyakazi 4 wa kazi</li>
@@ -266,7 +264,7 @@
                     <article class="pricing-card reveal delay-2">
                         <h3>Kifurushi Kikubwa</h3>
                         <p>Nyumba kubwa, ghorofa au ofisi</p>
-                        <div class="price">Tsh 250,000+</div>
+                        <div class="price">Tsh 500,000+</div>
                         <ul>
                             <li>Lori kubwa la Fuso au Isuzu</li>
                             <li>Wafanyakazi zaidi ya 6</li>
@@ -294,17 +292,9 @@
                         <img src="assets/images/optimized/team-khaki.webp" alt="Timu ya Wahamishaji Makazi Mwanza wakiwa kwenye sare za kaki" loading="lazy">
                         <figcaption>Wafanyakazi wenye uzoefu</figcaption>
                     </figure>
-                    <figure class="gallery-item reveal delay-2">
-                        <img src="assets/images/optimized/team-group.webp" alt="Tangazo rasmi la Wahamishaji Makazi Mwanza" loading="lazy">
-                        <figcaption>Huduma kwenda mikoa yote</figcaption>
-                    </figure>
-                    <figure class="gallery-item reveal">
-                        <img src="assets/images/optimized/moving-promo-1.webp" alt="Tangazo la huduma ya kuhamisha makazi Mwanza" loading="lazy">
-                        <figcaption>Ndani na nje ya Mwanza</figcaption>
-                    </figure>
-                    <figure class="gallery-item gallery-wide reveal delay-1">
-                        <img src="assets/images/optimized/moving-promo-2.webp" alt="Poster ya huduma za Wahamishaji Makazi Mwanza" loading="lazy">
-                        <figcaption>Huduma za uhakika</figcaption>
+                    <figure class="gallery-item gallery-wide reveal delay-2">
+                        <img src="assets/images/optimized/team-red.webp" alt="Timu ya Wahamishaji Makazi Mwanza wakiwa kwenye sare nyekundu" loading="lazy">
+                        <figcaption>Timu rasmi ya kampuni</figcaption>
                     </figure>
                 </div>
             </div>
@@ -343,14 +333,16 @@
     <footer id="mawasiliano" class="bg-gray-950 text-gray-400 py-12 border-t border-gray-800">
         <div class="container mx-auto px-5 lg:px-6 grid md:grid-cols-3 gap-8">
             <div>
-                <img src="assets/images/optimized/logo.webp" alt="Logo ya Wahamishaji Makazi Mwanza" class="footer-logo mb-4">
+                <img src="assets/images/logo.png" alt="Logo ya Wahamishaji Makazi Mwanza" class="footer-logo mb-4">
                 <h2 class="text-white font-bold text-lg mb-3">Wahamishaji Makazi Mwanza</h2>
                 <p class="text-sm leading-relaxed">Kampuni ya uhamishaji makazi na ofisi mkoani Mwanza. Tunajali usalama wa mali zako.</p>
             </div>
             <div>
                 <h2 class="text-white font-bold text-lg mb-4">Mawasiliano</h2>
                 <p class="text-sm">Simu: <a class="hover:text-white" href="tel:+255759905307">+255 759 905 307</a></p>
+                <p class="text-sm mt-2">Simu ya ziada: <a class="hover:text-white" href="tel:+255745814345">+255 745 814 345</a></p>
                 <p class="text-sm mt-2">WhatsApp: <a class="hover:text-white" href="https://wa.me/255759905307" target="_blank" rel="noopener">0759 905 307</a></p>
+                <p class="text-sm mt-2">Instagram: <a class="hover:text-white" href="https://www.instagram.com/wahamishaji_makazi_mwanza" target="_blank" rel="noopener">wahamishaji_makazi_mwanza</a></p>
                 <p class="text-sm mt-2">Ofisi: Mwanza NATA, Tanzania</p>
                 <p class="text-sm mt-2">Email: info@wahamishajimakazimwanza@gmail.com</p>
             </div>

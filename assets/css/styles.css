@@ -11,12 +11,15 @@ img {
 }
 
 .brand-logo {
-    width: 52px;
-    height: 52px;
-    object-fit: cover;
-    border-radius: 14px;
-    background: #020617;
-    border: 1px solid rgba(255, 255, 255, 0.12);
+    width: 112px;
+    height: auto;
+    max-height: 78px;
+    object-fit: contain;
+    border-radius: 12px;
+    background: #fff;
+    padding: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.32);
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.18);
 }
 
 .mobile-menu-button {
@@ -78,38 +81,40 @@ img {
     position: relative;
 }
 
-.hero-photo {
+.hero-slider {
+    position: relative;
     width: 100%;
-    aspect-ratio: 4 / 3;
-    object-fit: cover;
-    object-position: center;
+    aspect-ratio: 4 / 3.25;
     border-radius: 22px;
+    overflow: hidden;
+    background: #f8fafc;
     box-shadow: 0 30px 80px rgba(0, 0, 0, 0.35);
     border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
-.hero-badge {
+.hero-slide {
     position: absolute;
-    left: 18px;
-    right: 18px;
-    bottom: 18px;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    padding: 12px 14px;
-    border-radius: 16px;
-    background: rgba(17, 24, 39, 0.82);
-    border: 1px solid rgba(255, 255, 255, 0.14);
-    backdrop-filter: blur(10px);
-    font-weight: 800;
-    font-size: 0.9rem;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    padding: 10px;
+    opacity: 0;
+    transform: translateX(22px) scale(0.985);
+    transition: opacity 900ms ease, transform 900ms ease;
 }
 
-.hero-badge img {
-    width: 42px;
-    height: 42px;
-    border-radius: 12px;
-    object-fit: cover;
+.hero-slide.is-active {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+    z-index: 1;
+}
+
+.poster-slide {
+    padding: 0;
+    object-fit: contain;
+    background: #fff;
 }
 
 .hero-stat {
@@ -412,11 +417,14 @@ img {
 }
 
 .footer-logo {
-    width: 64px;
-    height: 64px;
-    object-fit: cover;
-    border-radius: 16px;
-    background: #020617;
+    width: auto;
+    max-width: 164px;
+    height: auto;
+    max-height: 96px;
+    object-fit: contain;
+    border-radius: 14px;
+    background: #fff;
+    padding: 6px;
 }
 
 .floating-whatsapp {
@@ -503,22 +511,17 @@ img {
 
 @media (max-width: 640px) {
     .brand-logo {
-        width: 46px;
-        height: 46px;
+        width: 78px;
+        height: 56px;
     }
 
     .hero-section {
         background-position: center top;
     }
 
-    .hero-photo {
+    .hero-slider {
         aspect-ratio: 1 / 1;
         border-radius: 18px;
-    }
-
-    .hero-badge {
-        position: static;
-        margin-top: 0.75rem;
     }
 
     .hero-stat {
